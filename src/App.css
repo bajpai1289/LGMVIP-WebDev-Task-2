@@ -1,0 +1,110 @@
+body {
+  background-image: linear-gradient(#b884db, #9c3aec);
+
+}
+
+.loader {
+  border: 10px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 10px solid #0011ff;
+  margin-top: 20%;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: spin 3s linear infinite;
+  animation: spin 3s linear infinite;
+  align-items: center;
+  text-align: center;
+  margin-left: 50%;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.wholecontainer {
+  background-size: cover;
+  text-align: -webkit-center;
+}
+
+.container {
+  height: auto;
+  padding-bottom: 399px;
+}
+
+.topnav {
+  height: 50px;
+  background-color: #333;
+  padding: 15px;
+  overflow: hidden;
+  font-weight: bold;
+}
+
+.topnav .active {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  transition: 0.5s;
+}
+
+.topnav .active:hover {
+  color: rgb(251, 255, 0);
+}
+
+.topnav .btn {
+  display: none;
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 22px;
+  transition: 0.5s;
+  border-radius: 5px;
+}
+
+.topnav .btn:hover {
+  color: rgb(255, 238, 0);
+  box-shadow: 0px 0px 0px 2px rgba(1, 202, 61, 0.979);
+  background-color: #d6c8c86e;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a.btn {
+    color: #f2f2f2;
+    float: right;
+    display: block;
+  }
+
+  .container {
+    height: 205vh;
+    text-align: -webkit-center;
+  }
+}
+
+.instruction {
+  top: 70%;
+  width: 50%;
+  border-radius: 10px;
+  padding: 15px;
+  font-size: 30px;
+  font-weight: 700;
+  border: 1px solid white;
+  margin: 20% auto 0;
+  background: linear-gradient(
+    045deg,
+    rgba(12, 11, 12, 0.555),
+    rgba(59, 57, 57, 0.555)
+  );
+  color: white;
+}
